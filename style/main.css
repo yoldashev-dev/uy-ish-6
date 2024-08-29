@@ -121,13 +121,18 @@ ul {
 }
 
 @media screen and (max-width: 768px) {
-  .baner-img {
+  .baner-img img {
     width: 100%;
   }
 }
 
 .baner-content {
   width: 50%;
+}
+@media screen and (max-width: 768px) {
+  .baner-content {
+    margin-left: 100px;
+  }
 }
 
 .banner-title-red {
@@ -170,6 +175,11 @@ ul {
   color: #fff;
   transition: all 0.2s ease-in;
 }
+@media screen and (max-width: 768px) {
+  .banner-button {
+    margin-left: 80px;
+  }
+}
 
 .banner-button:hover {
   background: #1f2e35;
@@ -183,6 +193,18 @@ ul {
 .about-row {
   display: flex;
   align-items: center;
+}
+@media screen and (max-width: 768px) {
+  .about-row {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .about-content {
+    margin-left: 60px;
+  }
 }
 
 .about-title {
@@ -264,6 +286,13 @@ ul {
   display: flex;
   -moz-column-gap: 80px;
        column-gap: 80px;
+}
+@media screen and (max-width: 768px) {
+  .product-cards {
+    display: flex;
+    flex-direction: column;
+    margin-left: 180px;
+  }
 }
 
 .product {

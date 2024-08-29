@@ -93,6 +93,7 @@
             line-height: 134%;
             text-align: center;
             color: #1f2e35;
+          
         }
 
 
@@ -104,14 +105,23 @@
 .baner-img{
 
     @media screen and (max-width:768px) {
-        &{
+        & img{
             width: 100%;
+            
         }
     }
 }
 
 .baner-content{
     width: 50%;
+
+
+    @media screen and (max-width:768px) {
+        & {
+            margin-left: 100px;
+        }
+    }
+
 }
 
 .banner-title-red{
@@ -130,6 +140,7 @@
     }
     
 }
+
 
 .banner-subtitle{
     font-family: $font-family;
@@ -161,6 +172,13 @@
     line-height: 145%;
     color: #fff;
     transition: all 0.2s ease-in;
+
+
+    @media screen and (max-width:768px) {
+        & {
+            margin-left: 80px;
+        }
+    }
 }
 
 .banner-button:hover{
@@ -171,11 +189,28 @@
 
 .about{
     background: #f6f6f6;
+
 }
 
 .about-row{
     display: flex;
     align-items: center;
+
+
+    @media screen and (max-width:768px) {
+        & {
+            display: flex;
+            flex-direction: column;
+        }
+    }
+}
+
+.about-content{
+    @media screen and (max-width:768px) {
+        & {
+            margin-left: 60px;
+        }
+    }
 }
 
 .about-title{
@@ -258,6 +293,15 @@
 .product-cards{
     display: flex;
     column-gap: 80px;
+
+
+    @media screen and (max-width:768px) {
+        & {
+            display: flex;
+            flex-direction: column;
+            margin-left: 180px;
+        }
+    }
 }
 
 .product{
